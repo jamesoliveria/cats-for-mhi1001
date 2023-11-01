@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<title>CATS :)</title>
+	</head>
+	<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="background.css">
+    <style>
+        /* Add some basic styles to reset default browser styles */
+        body, ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* Style the navigation bar */
+        .navbar {
+            background-color: #3498db; /* Blue background color */
+            overflow: hidden;
+            text-align: center; /* Center-align the navigation bar */
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            display: inline-block; /* Display links as inline-block elements */
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color when you hover over it */
+        .navbar a:hover {
+            background-color: #2980b9; /* Darker blue background on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Gallery.html">Slideshow</a>
+    <a href="Interactive.html">Interactive Gallery</a>
+    <a href="https://www.torontocatrescue.ca" target="_blank">Toronto Cat Rescue</a>
+</div>
+
+</body>
+</html>
+<head>
+	<link rel="stylesheet" type="text/css" href="center.css">
+		<h1>Welcome to MHI1001's Cat Page!</h1>
+		<p>I hope you enjoy the wonderful cat content on this site!
+		<p>=3 <br/>
+		<p><img src=https://cats.com/wp-content/uploads/2022/01/Calico-Cats.jpg width="300px"><br/>
+		<h2> Enjoy A Funny Cat Video on YouTube! <br/>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/IzluNxh-8_o" frameborder="0" allowfullscreen></iframe><br/>
+
+		<a href="https://www.youtube.com">Go to YouTube and enjoy some more cat videos!</a><br/>
+		<p> or </p><br>
+		<a href="https://www.google.com">Go to Google and look up some cute cat photos!</a></h2></br>
+
+	<p><script type = "text/javascript">
+
+/***********************************************
+* Display time of last visit script- by JavaScriptKit.com
+* This notice MUST stay intact for use
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and more
+***********************************************/
+
+var days = 730; // days until cookie expires = 2 years.
+var lastvisit=new Object();
+var firstvisitmsg="This is your first visit to this page. Welcome!"; 
+lastvisit.subsequentvisitmsg="Welcome back! Your last visit was on <b>[displaydate]</b>";
+
+lastvisit.getCookie=function(Name){ 
+var re=new RegExp(Name+"=[^;]+", "i"); 
+if (document.cookie.match(re)) 
+return document.cookie.match(re)[0].split("=")[1];
+return''; 
+}
+
+lastvisit.setCookie=function(name, value, days){ 
+var expireDate = new Date();
+
+var expstring=expireDate.setDate(expireDate.getDate()+parseInt(days));
+document.cookie = name+"="+value+"; expires="+expireDate.toGMTString()+"; path=/";
+}
+
+lastvisit.showmessage = function() {
+var wh = new Date();
+if (lastvisit.getCookie("visitc") == "") { 
+lastvisit.setCookie("visitc", wh, days); 
+document.write(firstvisitmsg);
+}
+
+else {
+var lv = lastvisit.getCookie("visitc");
+var lvp = Date.parse(lv);
+var now = new Date();
+now.setTime(lvp);
+var day = new Array("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat");
+var month = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+var dd = now.getDate();
+var dy = now.getDay();
+dy = day[dy];
+var mn = now.getMonth();
+mn = month[mn];
+yy = now.getFullYear();
+var hh = now.getHours();
+var ampm = "AM";
+if (hh >= 12) {ampm = "PM"}
+if (hh >12){hh = hh - 12};
+if (hh == 0) {hh = 12}
+if (hh < 10) {hh = "0" + hh};
+var mins = now.getMinutes();
+if (mins < 10) {mins = "0"+ mins}
+var secs = now.getSeconds();
+if (secs < 10) {secs = "0" + secs}
+var dispDate = dy + ", " + mn + " " + dd + ", " + yy + " " + hh + ":" + mins + ":" + secs + " " + ampm
+document.write(lastvisit.subsequentvisitmsg.replace("\[displaydate\]", dispDate))
+}
+
+lastvisit.setCookie("visitc", wh, days);
+
+}
+
+lastvisit.showmessage();
+
+</script>
+	</body>
+</html>
