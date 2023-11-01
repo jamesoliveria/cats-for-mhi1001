@@ -1,0 +1,32 @@
+/* Set the background color of the entire page to a subtle light blue */
+body {
+    background-color: #f0f8ff; /* This is a light blue color (AliceBlue) */
+}
+
+/* Add some basic styles to reset default browser styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #3498db; /* Blue background color */
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color when you hover over it */
+.navbar a:hover {
+    background-color: #add8e6; /* Darker blue background on hover */
+}

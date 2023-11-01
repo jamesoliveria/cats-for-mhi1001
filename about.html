@@ -1,0 +1,146 @@
+<html>
+	<head>
+		<title>CATS :)</title>
+	</head>
+	<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="background.css">
+    <style>
+        /* Add some basic styles to reset default browser styles */
+        body, ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* Style the navigation bar */
+        .navbar {
+            background-color: #3498db; /* Blue background color */
+            overflow: hidden;
+            text-align: center; /* Center-align the navigation bar */
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            display: inline-block; /* Display links as inline-block elements */
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color when you hover over it */
+        .navbar a:hover {
+            background-color: #2980b9; /* Darker blue background on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Gallery.html">Slideshow</a>
+    <a href="Interactive.html">Interactive Gallery</a>
+    <a href="https://www.torontocatrescue.ca" target="_blank">Toronto Cat Rescue</a>
+</div>
+
+</body>
+</html>
+<link rel="stylesheet" type="text/css" href="center.css">
+		<h1>About me</h1>
+		<p>My name is James
+		<p> I like cats<br/>
+		<h2> Do I have a cat? </h2>
+		<p>Yes! His name is Apollo and he's a 2 year old tuxedo cat :3<br/>
+		<p><img src=https://github.com/jamesoliveria/apollo/blob/main/IMG_0972.jpeg?raw=true width="400px">
+
+<p><!DOCTYPE html>
+<html>
+<head>
+    <title>My LinkedIn Profile</title>
+</head>
+<body>
+
+    <a href="https://www.linkedin.com/in/james-oliveria/" target="_blank">
+        <img src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-ya5g47j2.png" width = "50px" alt="LinkedIn Profile"> <p> Let's Connect!
+    </a>
+
+ 
+</body>
+</html>
+
+
+<p><script type = "text/javascript">
+
+/***********************************************
+* Display time of last visit script- by JavaScriptKit.com
+* This notice MUST stay intact for use
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and more
+***********************************************/
+
+var days = 730; // days until cookie expires = 2 years.
+var lastvisit=new Object();
+var firstvisitmsg="This is your first visit to this page. Welcome!"; 
+lastvisit.subsequentvisitmsg="Welcome back! Your last visit was on <b>[displaydate]</b>";
+
+lastvisit.getCookie=function(Name){ 
+var re=new RegExp(Name+"=[^;]+", "i"); 
+if (document.cookie.match(re)) 
+return document.cookie.match(re)[0].split("=")[1];
+return''; 
+}
+
+lastvisit.setCookie=function(name, value, days){ 
+var expireDate = new Date();
+
+var expstring=expireDate.setDate(expireDate.getDate()+parseInt(days));
+document.cookie = name+"="+value+"; expires="+expireDate.toGMTString()+"; path=/";
+}
+
+lastvisit.showmessage = function() {
+var wh = new Date();
+if (lastvisit.getCookie("visitc") == "") { 
+lastvisit.setCookie("visitc", wh, days); 
+document.write(firstvisitmsg);
+}
+
+else {
+var lv = lastvisit.getCookie("visitc");
+var lvp = Date.parse(lv);
+var now = new Date();
+now.setTime(lvp);
+var day = new Array("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat");
+var month = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
+var dd = now.getDate();
+var dy = now.getDay();
+dy = day[dy];
+var mn = now.getMonth();
+mn = month[mn];
+yy = now.getFullYear();
+var hh = now.getHours();
+var ampm = "AM";
+if (hh >= 12) {ampm = "PM"}
+if (hh >12){hh = hh - 12};
+if (hh == 0) {hh = 12}
+if (hh < 10) {hh = "0" + hh};
+var mins = now.getMinutes();
+if (mins < 10) {mins = "0"+ mins}
+var secs = now.getSeconds();
+if (secs < 10) {secs = "0" + secs}
+var dispDate = dy + ", " + mn + " " + dd + ", " + yy + " " + hh + ":" + mins + ":" + secs + " " + ampm
+document.write(lastvisit.subsequentvisitmsg.replace("\[displaydate\]", dispDate))
+}
+
+lastvisit.setCookie("visitc", wh, days);
+
+}
+
+lastvisit.showmessage();
+
+</script>
+	</body>
+</html>

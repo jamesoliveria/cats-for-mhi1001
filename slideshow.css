@@ -1,0 +1,24 @@
+/* CSS for the slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mySlides {
+    display: none;
+    animation: fade 2s ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+img {
+    width: 100%;
+}

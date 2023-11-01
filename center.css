@@ -1,0 +1,32 @@
+/* CSS for the navigation bar */
+.navbar {
+    background-color: #3498db;
+    overflow: hidden;
+    text-align: center; /* Center-align the navigation bar */
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Center-align header text */
+h1 {
+    text-align: center;
+}
+
+/* Center-align body text */
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center; /* Left-align h2 elements */
+}
+
+a {
+    text-align: center; /* Left-align h2 elements */
+}
